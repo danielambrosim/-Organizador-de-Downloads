@@ -1,1 +1,11 @@
-
+# Ignore organized folders created by the organizer script
+Imagens/
+PDFs/
+Planilhas/
+Documentos/
+Codigo/
+Audio/
+Video/
+Compactados/
+Variavel/
+Downloads/

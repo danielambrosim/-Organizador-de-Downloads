@@ -1,8 +1,3 @@
-"""
-Organizador de Downloads por Extensão
-Move arquivos de uma pasta para subpastas baseado no tipo de arquivo.
-"""
-
 import argparse
 import shutil
 from pathlib import Path
@@ -37,7 +32,7 @@ def obter_pasta_destino(arquivo: Path) -> str:
         Nome da pasta destino (ex: 'Imagens', 'PDFs')
     """
     extensao = arquivo.suffix.lower()
-    return EXTENSOES_PASTAS.get(extensao, 'Outros')
+    return EXTENSOES_PASTAS.get(extensao, 'Variavel')
 
 def organizar_pasta(pasta: Path, dry_run: bool = False) -> Tuple[int, List[str]]:
     """
